@@ -48,7 +48,7 @@ resource "aws_internet_gateway" "main" {
 
 resource "aws_eip" "nat" {
   count = length(var.public_subnet_cidrs)
-  domain = "vpc"
+
 
   tags = {
     Name = "${var.cluster_name}-nat-${count.index + 1}"
