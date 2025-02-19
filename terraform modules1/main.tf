@@ -13,10 +13,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraformstatebucket1279"
+    bucket = "terraformstatebucket12790"
     key    = "terraform.tfstate"
     region = "eu-west-2"
-    dynamodb_table = "terraformlocktable1279"
+    dynamodb_table = "terraformlocktable12790"
     
   }
 }
